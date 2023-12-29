@@ -1,5 +1,17 @@
 # email-analyzer
+A script to analyze your email inbox and sort by number of emails from an
+address or total_size of emails from address
 
+## Example Usage
+Process Emails in *EML/* and save as *output/ea_output.json*
+- `python main.py -i EML`
+
+Create a file sorted by count and another sorted by size
+- `python main.py -i EML -c -s`
+
+
+## Docs
+```
 usage: Email Analyzer [-h] [-i INPUT_DIRECTORY] [-n NAME]
                       [-o OUTPUT_DIRECTORY] [-c] [-s] [-p]
 
@@ -18,5 +30,6 @@ options:
   -s, --size            output a separate file sorted by total size of emails
                         per email address
   -p, --process         process eml files. True on first run
+```
 
 Pre-alpha
